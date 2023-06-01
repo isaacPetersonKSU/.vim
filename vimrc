@@ -1,7 +1,3 @@
-color scheme
-color default
-" highlight colorcolumn ctermbg=231
-
 " line numbers
 set number
 set relativenumber 
@@ -17,8 +13,11 @@ set tabstop=4 shiftwidth=4 softtabstop=4
 set autoindent smartindent
 
 " <--initalize that abomonation
-" autocmd VimEnter * NERDTree
-" autocmd VimEnter * wincmd p
-" :command NT NERDTreeToggle
+packadd! nerdtree
 :nnoremap tr :NERDTreeToggle<CR>
+
+" color scheme settings
+packadd! everforest
+colorscheme everforest
+set background=dark
 
