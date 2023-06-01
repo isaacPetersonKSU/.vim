@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/usr/bin'
+let g:netrw_dirhist_8='/home/ijp/algs'
+let g:netrw_dirhist_7='/home/ijp/algs/greedy'
+let g:netrw_dirhist_6='/home/ijp/algs/greedy/src'
+let g:netrw_dirhist_5='/home/ijp'
+let g:netrw_dirhist_4='/home/ijp/PyMesh'
+let g:netrw_dirhist_3='/home/ijp'
+let g:netrw_dirhist_2='/home/ijp/PyMesh'
+let g:netrw_dirhist_1='/home/ijp'
+let g:netrw_dirhist_0='/home/ijp/PyMesh'
