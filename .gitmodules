@@ -4,3 +4,6 @@
 [submodule "pack/plugins/start/nerdtree"]
 	path = pack/plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree
+[submodule "pack/colors/start/everforest"]
+	path = pack/colors/start/everforest
+	url = https://github.com/sainnhe/everforest
