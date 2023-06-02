@@ -18,21 +18,12 @@ packadd! nerdtree
 
 " color scheme settings
 packadd! everforest
-
-" Important!!
-if has('termguicolors')
+if has('termguicolors') " Important!!
   set termguicolors
 endif
-
-" For dark version.
-set background=dark
-
-" Set contrast.
-" This configuration option should be placed before `colorscheme everforest`.
-" Available values: 'hard', 'medium'(default), 'soft'
-let g:everforest_background = 'hard'
-
-" For better performance
-let g:everforest_better_performance = 1
-
+let g:everforest_background = 'hard' " 'medium'(default), 'soft'
+set background = dark
+let g:everforest_better_performance = 1 " For better performance
 colorscheme everforest
+
+
