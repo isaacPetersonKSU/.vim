@@ -22,7 +22,7 @@ if has('termguicolors') " Important!!
   set termguicolors
 endif
 let g:everforest_background = 'hard' " 'medium'(default), 'soft'
-set background = dark
+set background=dark
 let g:everforest_better_performance = 1 " For better performance
 colorscheme everforest
 
