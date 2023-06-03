@@ -7,3 +7,6 @@
 [submodule "bundle/Vundle.vim"]
 	path = "bundle/Vundle.vim"
 	url = "https://github.com/VundleVim/Vundle.vim"
+[submodule "bundle/YouCompleteMe"]
+	path = "bundle/YouCompleteMe"
+	url = "https://github.com/ycm-core/YouCompleteMe"
