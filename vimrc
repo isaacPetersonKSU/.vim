@@ -12,6 +12,10 @@ set ruler
 set tabstop=4 shiftwidth=4 softtabstop=4
 set autoindent smartindent
 
+" center cursor when page-jumping
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
+
 " <--initalize that abomonation
 packadd! nerdtree
 :nnoremap tr :NERDTreeToggle<CR>
