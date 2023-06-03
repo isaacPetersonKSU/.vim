@@ -1,6 +1,3 @@
-[submodule "pack/colors/start/nerdtree"]
-	path = pack/colors/start/nerdtree
-	url = https://github.com/preservim/nerdtree
 [submodule "pack/plugins/start/nerdtree"]
 	path = pack/plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree
