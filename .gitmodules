@@ -1,6 +1,9 @@
 [submodule "pack/plugins/start/nerdtree"]
-	path = pack/plugins/start/nerdtree
-	url = https://github.com/preservim/nerdtree
+	path = "pack/plugins/start/nerdtree"
+	url = "https://github.com/preservim/nerdtree"
 [submodule "pack/colors/start/everforest"]
-	path = pack/colors/start/everforest
-	url = https://github.com/sainnhe/everforest
+	path = "pack/colors/start/everforest"
+	url = "https://github.com/sainnhe/everforest"
+[submodule "bundle/Vundle.vim"]
+	path = "bundle/Vundle.vim"
+	url = "https://github.com/VundleVim/Vundle.vim"
