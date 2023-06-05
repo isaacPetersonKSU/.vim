@@ -25,11 +25,13 @@ packadd! everforest
 if has('termguicolors') " Important!!
   set termguicolors
 endif
-let g:everforest_background = 'hard' " 'medium'(default), 'soft'
+let g:everforest_background = 'hard'
 set background=dark
-let g:everforest_better_performance = 1 " For better performance
+let g:everforest_better_performance = 1
 colorscheme everforest
 
 " serching and tags
 set path+=** " search all subdirectories recursivly
-" command! MakeTags !ctags -R .
+command! Taggit !~/.vim/src/taggit.sh
+:nnoremap tg :Taggit<CR><CR>
+

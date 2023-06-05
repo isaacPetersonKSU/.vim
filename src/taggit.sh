@@ -4,7 +4,7 @@
 root="$(git rev-parse --show-toplevel 2>/dev/null)"
 forg="$root/.gitignore" # https://git-scm.com/docs/gitignore (persistant)
 list="$root/taggit" # file containing list of files to tag (temporary)
-tags="$root/tags" # file containing tags (persistant)
+tags="/tags" # file containing tags (persistant but ignored by git)
 
 if [[ -n "$root" ]]; then
   git ls-files --recurse-submodules $root > "$list"
@@ -14,11 +14,11 @@ if [[ -n "$root" ]]; then
   
   if [[ ! -f "$forg" ]]; then
 	touch "$forg"
-	echo "$forg created"
+	# echo "$forg created"
   fi
   if !(grep -a "$tags" "$forg"); then
-    echo "$tags" >> "$forg"
-    echo "$tags added to $forg"
+	echo "$tags" >> "@forg"
+    # echo "$tags added to $forg"
   fi
 else
   echo "error: not in a git repo"

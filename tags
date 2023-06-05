@@ -141,6 +141,7 @@ Screenshots	pack/colors/start/everforest/.github/pull_request_template.md	/^### 
 Self-Diagnosis	pack/plugins/start/nerdtree/.github/ISSUE_TEMPLATE/bug.md	/^#### Self-Diagnosis$/;"	t
 State Your Question	pack/plugins/start/nerdtree/.github/ISSUE_TEMPLATE/question.md	/^#### State Your Question$/;"	t
 Steps to Reproduce the Issue	pack/plugins/start/nerdtree/.github/ISSUE_TEMPLATE/bug.md	/^#### Steps to Reproduce the Issue$/;"	t
+Taggit	vimrc	/^command! Taggit !~\/.vim\/src\/taggit.sh$/;"	c
 The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)	pack/plugins/start/nerdtree/README.markdown	/^# The NERDTree [![Vint](https:\/\/github.com\/preservim\/nerdtree\/workflows\/Vint\/badge.svg)](/;"	c
 U	autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
 U	autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
@@ -343,8 +344,8 @@ g:airline#themes#everforest#palette	pack/colors/start/everforest/autoload/airlin
 g:airline#themes#everforest#palette	pack/colors/start/everforest/autoload/airline/themes/everforest.vim	/^let g:airline#themes#everforest#palette.visual_modified = deepcopy(g:airline#themes#everforest#p/;"	v
 g:airline#themes#everforest#palette	pack/colors/start/everforest/autoload/airline/themes/everforest.vim	/^let g:airline#themes#everforest#palette.visual_modified.airline_c = [ s:visual_mod_fg[0] , s:vis/;"	v
 g:colors_name	pack/colors/start/everforest/colors/everforest.vim	/^let g:colors_name = 'everforest'$/;"	v
-g:everforest_background	vimrc	/^let g:everforest_background = 'hard' " 'medium'(default), 'soft'$/;"	v
-g:everforest_better_performance	vimrc	/^let g:everforest_better_performance = 1 " For better performance$/;"	v
+g:everforest_background	vimrc	/^let g:everforest_background = 'hard'$/;"	v
+g:everforest_better_performance	vimrc	/^let g:everforest_better_performance = 1$/;"	v
 g:everforest_loaded_file_types	pack/colors/start/everforest/colors/everforest.vim	/^let g:everforest_loaded_file_types = []$/;"	v
 g:everforest_lsp_kind_color	pack/colors/start/everforest/colors/everforest.vim	/^let g:everforest_lsp_kind_color = [$/;"	v
 g:fzf_colors	pack/colors/start/everforest/colors/everforest.vim	/^let g:fzf_colors = {$/;"	v
