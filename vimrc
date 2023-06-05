@@ -33,5 +33,5 @@ colorscheme everforest
 " serching and tags
 set path+=** " search all subdirectories recursivly
 command! Taggit !~/.vim/src/taggit.sh
-:nnoremap tg :Taggit<CR><CR>
+:nnoremap tg :Taggit<CR>
 
