@@ -4,9 +4,6 @@
 [submodule "pack/colors/start/everforest"]
 	path = "pack/colors/start/everforest"
 	url = "https://github.com/sainnhe/everforest"
-[submodule "bundle/Vundle.vim"]
-	path = "bundle/Vundle.vim"
-	url = "https://github.com/VundleVim/Vundle"
-[submodule "bundle/YouCompleteMe"]
-	path = "bundle/YouCompleteMe"
-	url = "https://github.com/ycm-core/YouCompleteMe"
+[submodule "pack/plugins/start/vim-misc"]
+	path = pack/plugins/start/vim-misc
+	url = https://github.com/xolox/vim-misc/
