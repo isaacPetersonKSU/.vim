@@ -143,6 +143,8 @@ State Your Question	pack/plugins/start/nerdtree/.github/ISSUE_TEMPLATE/question.
 Steps to Reproduce the Issue	pack/plugins/start/nerdtree/.github/ISSUE_TEMPLATE/bug.md	/^#### Steps to Reproduce the Issue$/;"	t
 Taggit	vimrc	/^command! Taggit !~\/.vim\/src\/taggit.sh$/;"	c
 The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)	pack/plugins/start/nerdtree/README.markdown	/^# The NERDTree [![Vint](https:\/\/github.com\/preservim\/nerdtree\/workflows\/Vint\/badge.svg)](/;"	c
+ToggleIndent	vimrc	/^command! ToggleIndent call ToggleIndentStyle()$/;"	c
+ToggleIndentStyle	vimrc	/^function! ToggleIndentStyle()$/;"	f
 U	autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
 U	autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
 WriteBookmarks	pack/plugins/start/nerdtree/lib/nerdtree/creator.vim	/^    command! -buffer -nargs=0 WriteBookmarks call g:NERDTreeBookmark.Write()$/;"	c
@@ -353,6 +355,9 @@ g:indentLine_color_gui	pack/colors/start/everforest/colors/everforest.vim	/^  le
 g:indentLine_color_gui	pack/colors/start/everforest/colors/everforest.vim	/^  let g:indentLine_color_gui = s:palette.grey0[0]$/;"	v
 g:indentLine_color_term	pack/colors/start/everforest/colors/everforest.vim	/^  let g:indentLine_color_term = s:palette.bg5[1]$/;"	v
 g:indentLine_color_term	pack/colors/start/everforest/colors/everforest.vim	/^  let g:indentLine_color_term = s:palette.grey0[1]$/;"	v
+g:indent_style	vimrc	/^    let g:indent_style = 'spaces'$/;"	v
+g:indent_style	vimrc	/^    let g:indent_style = 'tabs'$/;"	v
+g:indent_style	vimrc	/^let g:indent_style = 'spaces'$/;"	v
 g:lightline#colorscheme#everforest#palette	pack/colors/start/everforest/autoload/lightline/colorscheme/everforest.vim	/^let g:lightline#colorscheme#everforest#palette = lightline#colorscheme#flatten(s:p)$/;"	v
 g:limelight_conceal_ctermfg	pack/colors/start/everforest/colors/everforest.vim	/^let g:limelight_conceal_ctermfg = s:palette.grey0[1]$/;"	v
 g:limelight_conceal_guifg	pack/colors/start/everforest/colors/everforest.vim	/^let g:limelight_conceal_guifg = s:palette.grey0[0]$/;"	v

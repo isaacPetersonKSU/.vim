@@ -10,7 +10,20 @@ set ruler
 
 " tabs and indentation
 set tabstop=4 shiftwidth=4 softtabstop=4
-set autoindent smartindent
+set autoindent smartindent expandtab
+let g:indent_style = 'spaces'
+function! ToggleIndentStyle()
+  if g:indent_style == 'tabs'
+    set expandtab
+    let g:indent_style = 'spaces'
+    echo "Switched to spaces for indentation"
+  else
+    set noexpandtab 
+    let g:indent_style = 'tabs'
+    echo "Switched to tabs for indentation"
+  endif
+endfunction
+command! ToggleIndent call ToggleIndentStyle()
 
 " center cursor when page-jumping
 nnoremap("<C-d>", "<C-d>zz")
@@ -22,7 +35,7 @@ packadd! nerdtree
 
 " color scheme settings
 packadd! everforest
-if has('termguicolors') " Important!!
+if has('termguicolors') 
   set termguicolors
 endif
 let g:everforest_background = 'hard'
@@ -30,8 +43,9 @@ set background=dark
 let g:everforest_better_performance = 1
 colorscheme everforest
 
-" serching and tags
+" searching and tags
 set path+=** " search all subdirectories recursivly
 command! Taggit !~/.vim/src/taggit.sh
 :nnoremap tg :Taggit<CR>
+
 
