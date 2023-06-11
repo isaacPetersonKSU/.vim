@@ -31,5 +31,6 @@ let g:everforest_better_performance = 1 " For better performance
 colorscheme everforest
 
 " serching and tags
+packad! YouCompleteMe
 set path+=** " search all subdirectories recursivly
 " command! MakeTags !ctags -R .
