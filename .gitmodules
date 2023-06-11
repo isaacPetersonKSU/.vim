@@ -7,3 +7,9 @@
 [submodule "vim-misc"]
 	path = pack/plugins/start/vim-misc
 	url = https://github.com/xolox/vim-misc
+[submodule "easytags"]
+	path = pack/plugins/start/vim-easytags
+	url = https://github.com/xolox/vim-easytags
+[submodule "pack/plugins/start/-name=ctrlp"]
+	path = pack/plugins/start/-name=ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim

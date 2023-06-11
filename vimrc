@@ -29,9 +29,11 @@ command! ToggleIndent call ToggleIndentStyle()
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 
-" <--initalize that abomonation
+" enable nerdtree, add a keybinding for it, and enabled it by default unless vim
+" was opened on a particular file.
 packadd! nerdtree
 :nnoremap tr :NERDTreeToggle<CR>
+autocmd VimEnter * if argc() == 0 | NERDTree | endif
 
 " color scheme settings
 packadd! everforest
@@ -47,5 +49,4 @@ colorscheme everforest
 set path+=** " search all subdirectories recursivly
 command! Taggit !~/.vim/src/taggit.sh
 :nnoremap tg :Taggit<CR>
-
 
