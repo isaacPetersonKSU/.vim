@@ -34,12 +34,12 @@ set background=dark
 let g:everforest_better_performance = 1 " For better performance
 colorscheme everforest
 
-" serching and tags
-packad! YouCompleteMe
+" syntax highlighting tool that requires cmake to work
+" packad! YouCompleteMe
+
+" automatically make tags and tell me when you're doing it
 packad! vim-gutentags
-" notify me when tags are updated automatically
 set statusline+=%{gutentags#statusline()}
 
 " include stdlibs
 set tags+=/opt/microchip/xc8/v2.40/pic/tags
-
