@@ -36,5 +36,6 @@ colorscheme everforest
 
 " serching and tags
 packad! YouCompleteMe
+packad! vim-gutentags
 " notify me when tags are updated automatically
 set statusline+=%{gutentags#statusline()}
