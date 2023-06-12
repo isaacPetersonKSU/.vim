@@ -5,7 +5,7 @@
 	path = "pack/colors/start/everforest"
 	url = "https://github.com/sainnhe/everforest.git"
 [submodule "YouCompleteMe"]
-	path = pack/plugins/start/YouCompleteMe
+	path = pack/plugins/opt/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
 [submodule "ctrlp"]
 	path = pack/plugins/opt/ctrlp
