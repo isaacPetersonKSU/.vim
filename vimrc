@@ -22,7 +22,7 @@ packadd! nerdtree
 if argc() == 0
   autocmd VimEnter * :NERDTreeVCS<CR>
 endif
-nnoremap <tr> :NERDTreeToggleVCS<CR>
+nnoremap tr :NERDTreeToggle<CR>
 
 " color scheme settings
 packadd! everforest
@@ -39,3 +39,7 @@ packad! YouCompleteMe
 packad! vim-gutentags
 " notify me when tags are updated automatically
 set statusline+=%{gutentags#statusline()}
+
+" include stdlibs
+set tags+=/opt/microchip/xc8/v2.40/pic/tags
+
