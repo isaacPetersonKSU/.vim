@@ -16,9 +16,10 @@ set autoindent smartindent
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 
-" <--initalize that abomonation
+" file explorer
 packadd! nerdtree
-:nnoremap tr :NERDTreeToggle<CR>
+nnoremap <tr> :NERDTreeVCS<CR>
+autocmd VimEnter * :NERDTreeVCS<CR>
 
 " color scheme settings
 packadd! everforest
@@ -32,5 +33,6 @@ colorscheme everforest
 
 " serching and tags
 packad! YouCompleteMe
-set path+=** " search all subdirectories recursivly
-" command! MakeTags !ctags -R .
+" notify me when tags are updated automatically
+set statusline+=%{gutentags#statusline()}
+:autocmd 
