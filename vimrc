@@ -19,7 +19,7 @@ nnoremap("<C-u>", "<C-u>zz")
 " file explorer
 packadd! nerdtree
 " dont start nerdtree if opened on a file?
-if argc() > 0
+if argc() == 0
   autocmd VimEnter * :NERDTreeVCS<CR>
 endif
 nnoremap <tr> :NERDTreeToggleVCS<CR>
