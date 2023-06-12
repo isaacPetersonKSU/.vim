@@ -18,8 +18,11 @@ nnoremap("<C-u>", "<C-u>zz")
 
 " file explorer
 packadd! nerdtree
-nnoremap <tr> :NERDTreeVCS<CR>
-autocmd VimEnter * :NERDTreeVCS<CR>
+" dont start nerdtree if opened on a file?
+if argc() > 0
+  autocmd VimEnter * :NERDTreeVCS<CR>
+endif
+nnoremap <tr> :NERDTreeToggleVCS<CR>
 
 " color scheme settings
 packadd! everforest
@@ -35,4 +38,3 @@ colorscheme everforest
 packad! YouCompleteMe
 " notify me when tags are updated automatically
 set statusline+=%{gutentags#statusline()}
-:autocmd 
