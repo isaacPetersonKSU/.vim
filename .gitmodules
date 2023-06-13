@@ -13,3 +13,6 @@
 [submodule "gutentags"]
 	path = pack/plugins/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "anyfold"]
+	path = pack/plugins/start/vim-anyfold
+	url = https://github.com/pseewald/vim-anyfold

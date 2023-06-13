@@ -3,12 +3,19 @@ set number
 set relativenumber 
 set laststatus=2
 
+" status bar
+set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
+
 " wrapping and line length
 set textwidth=80
 set colorcolumn=81
 set ruler
 
 " tabs and indentation
+autocmd Filetype * AnyFoldActivate
+let g:anyfold_fold_comments=1
+set foldlevel=0
+hi Folded term=NONE cterm=NONE
 set tabstop=4 shiftwidth=4 softtabstop=4
 set autoindent smartindent
 
