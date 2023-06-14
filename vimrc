@@ -3,25 +3,30 @@ set number
 set relativenumber 
 set laststatus=2
 
-" status bar
-set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
-
 " wrapping and line length
 set textwidth=80
 set colorcolumn=81
 set ruler
 
+" status bar
+set laststatus=2
+
 " tabs and indentation
-autocmd Filetype * AnyFoldActivate
-let g:anyfold_fold_comments=1
-set foldlevel=0
-hi Folded term=NONE cterm=NONE
 set tabstop=4 shiftwidth=4 softtabstop=4
 set autoindent smartindent
 
 " center cursor when page-jumping
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
+
+" Position the (global) quickfix window at the very bottom of the window
+" (useful for making sure that it appears underneath splits)
+"
+" NOTE: Using a check here to make sure that window-specific location-lists
+" aren't effected, as they use the same `FileType` as quickfix-lists.
+autocmd FileType qf if (getwininfo(win_getid())[0].loclist != 1) | wincmd J | endif
+autocmd VimEnter * :copen
+
 
 " file explorer
 packadd! nerdtree
