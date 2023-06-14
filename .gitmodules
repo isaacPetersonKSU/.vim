@@ -16,3 +16,6 @@
 [submodule "anyfold"]
 	path = pack/plugins/start/vim-anyfold
 	url = https://github.com/pseewald/vim-anyfold
+[submodule "far"]
+	path = pack/plugins/start/far.vim
+	url = https://github.com/brooth/far.vim
