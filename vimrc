@@ -19,14 +19,11 @@ set autoindent smartindent
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 
-" Position the (global) quickfix window at the very bottom of the window
-" (useful for making sure that it appears underneath splits)
-"
-" NOTE: Using a check here to make sure that window-specific location-lists
-" aren't effected, as they use the same `FileType` as quickfix-lists.
-autocmd FileType qf if (getwininfo(win_getid())[0].loclist != 1) | wincmd J | endif
-autocmd VimEnter * :copen
-
+" search whole project
+:nnoremap gr :grep <cword> *<CR>
+:nnoremap Gr :grep <cword> %:p:h/*<CR>
+:nnoremap gR :grep '\b<cword>\b' *<CR>
+:nnoremap GR :grep '\b<cword>\b' %:p:h/*<CR>
 
 " file explorer
 packadd! nerdtree
