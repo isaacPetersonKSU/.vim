@@ -8,8 +8,9 @@ set textwidth=80
 set colorcolumn=81
 set ruler
 
-" status bar
+" status bar alwasys show file path line number and percentage
 set laststatus=2
+set statusline=%f\ [%l/%L]\ (%p%%)
 
 " tabs and indentation
 set tabstop=4 shiftwidth=4 softtabstop=4
@@ -20,10 +21,7 @@ nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 
 " search whole project
-:nnoremap gr :grep <cword> *<CR>
-:nnoremap Gr :grep <cword> %:p:h/*<CR>
-:nnoremap gR :grep '\b<cword>\b' *<CR>
-:nnoremap GR :grep '\b<cword>\b' %:p:h/*<CR>
+nnoremap <C-\> :grep /<cword>/gj ./**/<CR>
 
 " file explorer
 packadd! nerdtree
