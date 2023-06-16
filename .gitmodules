@@ -19,3 +19,9 @@
 [submodule "far"]
 	path = pack/plugins/start/far.vim
 	url = https://github.com/brooth/far.vim
+[submodule "orbital"]
+	path = pack/colors/start/vim-orbital
+	url = https://github.com/fcpg/vim-orbital.git
+[submodule "amber"]
+	path = pack/colors/start/vim-amber
+	url = https://github.com/foxbunny/vim-amber.git
