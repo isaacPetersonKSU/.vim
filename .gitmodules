@@ -25,3 +25,6 @@
 [submodule "amber"]
 	path = pack/colors/start/vim-amber
 	url = https://github.com/foxbunny/vim-amber.git
+[submodule "vorange"]
+	path = pack/colors/start/vorange
+	url = https://github.com/Marfisc/vorange.git
