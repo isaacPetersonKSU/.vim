@@ -35,6 +35,9 @@ nnoremap("<C-u>", "<C-u>zz")
 " search whole project
 nnoremap <C-\> :grep /<cexpr>/gj ./**/
 
+" highlight when searching locally
+set hlsearch
+
 " file explorer
 packadd! nerdtree
 " dont start nerdtree if opened on a file?
@@ -50,8 +53,7 @@ endif
 " let g:everforest_background = 'hard' " 'medium'(default), 'soft'
 " set background=dark
 " let g:everforest_better_performance = 1 " For better performance
-" colorscheme everforest
-colorscheme orbital
+colorscheme vorange
 
 " syntax highlighting tool that requires cmake to work
 " packad! YouCompleteMe
