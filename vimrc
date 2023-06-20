@@ -47,13 +47,15 @@ endif
 nnoremap tr :NERDTreeToggle<CR>
 
 " color scheme settings
+packadd! everforest
 if has('termguicolors') " Important!!
   set termguicolors
 endif
-" let g:everforest_background = 'hard' " 'medium'(default), 'soft'
-" set background=dark
-" let g:everforest_better_performance = 1 " For better performance
-colorscheme vorange
+let g:everforest_background = 'hard' " 'medium'(default), 'soft'
+set background=dark
+let g:everforest_better_performance = 1 " For better performance
+colorscheme everforest
+
 
 " syntax highlighting tool that requires cmake to work
 " packad! YouCompleteMe
@@ -64,3 +66,10 @@ set statusline+=%{gutentags#statusline()}
 
 " include stdlibs
 set tags+=/opt/microchip/xc8/v2.40/pic/tags
+
+
+
+
+
+
+
