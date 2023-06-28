@@ -67,9 +67,3 @@ set statusline+=%{gutentags#statusline()}
 " include stdlibs
 set tags+=/opt/microchip/xc8/v2.40/pic/tags
 
-
-
-
-
-
-

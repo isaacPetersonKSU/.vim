@@ -27,7 +27,7 @@
 	url = https://github.com/foxbunny/vim-amber.git
 [submodule "vorange"]
 	path = pack/colors/start/vorange
-	url = https://github.com/Marfisc/vorange.git
+	url = https://github.com/isaacPetersonKSU/vorange.git
 [submodule "pack/colors/start/vim-github-dark"]
 	path = pack/colors/start/vim-github-dark
 	url = https://github.com/vv9k/vim-github-dark.git
