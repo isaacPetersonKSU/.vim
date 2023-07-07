@@ -56,14 +56,21 @@ set background=dark
 let g:everforest_better_performance = 1 " For better performance
 colorscheme everforest
 
-
-" syntax highlighting tool that requires cmake to work
-" packad! YouCompleteMe
-
 " automatically make tags and tell me when you're doing it
 packad! vim-gutentags
 set statusline+=%{gutentags#statusline()}
 
 " include stdlibs
 set tags+=/opt/microchip/xc8/v2.40/pic/tags
+
+" ccs's weird error format
+augroup MakeAutocommand
+  autocmd! 
+  autocmd QuickFixCmdPost [^l]* cwindow | redraw!
+augroup END
+
+" warning format
+set errorformat=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
+" error format
+set errorformat+=***\ %trror\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m 
 
