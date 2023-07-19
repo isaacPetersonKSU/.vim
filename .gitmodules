@@ -31,3 +31,18 @@
 [submodule "pack/colors/start/vim-github-dark"]
 	path = pack/colors/start/vim-github-dark
 	url = https://github.com/vv9k/vim-github-dark.git
+[submodule "pack/colors/start/gruvbox"]
+	path = pack/colors/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "pack/plugins/start/unimpaired"]
+	path = pack/plugins/start/unimpaired
+	url = https://tpope.io/vim/unimpaired.git
+[submodule "pack/colors/start/neverland-vim-theme"]
+	path = pack/colors/start/neverland-vim-theme
+	url = https://github.com/trapd00r/neverland-vim-theme.git
+[submodule "pack/colors/start/vim"]
+	path = pack/colors/start/vim
+	url = https://github.com/nordtheme/vim.git
+[submodule "pack/plugins/start/vim-plug"]
+	path = pack/plugins/start/vim-plug
+	url = https://github.com/junegunn/vim-plug.git

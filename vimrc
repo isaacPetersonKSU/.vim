@@ -29,11 +29,9 @@ endfunction
 command! ToggleIndent call ToggleIndentStyle()
 
 " center cursor when page-jumping
-nnoremap("<C-d>", "<C-d>zz")
-nnoremap("<C-u>", "<C-u>zz")
 
 " search whole project
-nnoremap <C-\> :grep /<cexpr>/gj ./**/
+nnoremap <c-\> :F (<c-r><c-w>) **/*.c **/*.h<cr>
 
 " highlight when searching locally
 set hlsearch
@@ -46,6 +44,12 @@ if argc() == 0
 endif
 nnoremap tr :NERDTreeToggle<CR>
 
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
 " color scheme settings
 packadd! everforest
 if has('termguicolors') " Important!!
@@ -55,6 +59,7 @@ let g:everforest_background = 'hard' " 'medium'(default), 'soft'
 set background=dark
 let g:everforest_better_performance = 1 " For better performance
 colorscheme everforest
+
 
 " automatically make tags and tell me when you're doing it
 packad! vim-gutentags
@@ -70,7 +75,8 @@ augroup MakeAutocommand
 augroup END
 
 " warning format
-set errorformat=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
+set errorformat+=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
 " error format
 set errorformat+=***\ %trror\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m 
+" makefile error format
 
