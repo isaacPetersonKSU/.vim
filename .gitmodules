@@ -43,6 +43,6 @@
 [submodule "pack/colors/start/vim"]
 	path = pack/colors/start/vim
 	url = https://github.com/nordtheme/vim.git
-[submodule "pack/plugins/start/vim-plug"]
-	path = pack/plugins/start/vim-plug
-	url = https://github.com/junegunn/vim-plug.git
+[submodule "pack/plugins/start/fugitive"]
+	path = pack/plugins/start/fugitive
+	url = https://tpope.io/vim/fugitive.git

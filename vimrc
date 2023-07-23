@@ -31,7 +31,7 @@ command! ToggleIndent call ToggleIndentStyle()
 " center cursor when page-jumping
 
 " search whole project
-nnoremap <c-\> :F (<c-r><c-w>) **/*.c **/*.h<cr>
+nnoremap <c-\> :F (<c-r><c-w>) **/*.h <cr>
 
 " highlight when searching locally
 set hlsearch
