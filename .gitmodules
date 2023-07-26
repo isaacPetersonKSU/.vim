@@ -49,3 +49,9 @@
 [submodule "pack/plugins/start/git-blame.vim"]
 	path = pack/plugins/start/git-blame.vim
 	url = https://github.com/zivyangll/git-blame.vim.git
+[submodule "pack/colors/start/momiji"]
+	path = pack/colors/start/momiji
+	url = https://github.com/kyoh86/momiji.git
+[submodule "/home/ijp/.vim/bundle/vim-fahrenheit"]
+	path = /home/ijp/.vim/bundle/vim-fahrenheit
+	url = https://github.com/fcpg/vim-fahrenheit

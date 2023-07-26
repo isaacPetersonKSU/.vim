@@ -80,3 +80,5 @@ set errorformat+=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
 set errorformat+=***\ %trror\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m 
 " makefile error format
 
+
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
