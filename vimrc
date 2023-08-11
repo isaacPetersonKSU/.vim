@@ -28,13 +28,14 @@ function! ToggleIndentStyle()
 endfunction
 command! ToggleIndent call ToggleIndentStyle()
 
-" center cursor when page-jumping
-
-" search whole project
-nnoremap <c-\> :F (<c-r><c-w>) **/*.h <cr>
 
 " highlight when searching locally
 set hlsearch
+
+" search entire project
+" nnoremap <C-w> :F expand("<cword>") **/*.c **/*.h<CR>
+" nnoremap <C-w> :F if **/*.c **/*.h<CR>
+nnoremap <C-w> :execute 'F ' . expand("<cword>") . ' **/*.h **/*.c'<CR>
 
 " file explorer
 packadd! nerdtree
@@ -59,6 +60,21 @@ let g:everforest_background = 'hard' " 'medium'(default), 'soft'
 set background=dark
 let g:everforest_better_performance = 1 " For better performance
 colorscheme everforest
+" so u can watch tv behind it
+let s:transparent = 0
+command! TransparentToggle :call ToggleTransparent()
+function! ToggleTransparent()
+    if s:transparent == 0
+        let s:transparent = 1
+        hi EndOfBuffer guibg=NONE ctermbg=NONE
+        hi Normal guibg=NONE ctermbg=NONE
+    else
+        let s:transparent = 0
+        hi clear EndOfBuffer
+        hi clear Normal
+        " Restore your original background colors here
+    endif
+endfunction
 
 
 " automatically make tags and tell me when you're doing it
@@ -79,6 +95,3 @@ set errorformat+=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
 " error format
 set errorformat+=***\ %trror\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m 
 " makefile error format
-
-
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>

@@ -55,3 +55,6 @@
 [submodule "/home/ijp/.vim/bundle/vim-fahrenheit"]
 	path = /home/ijp/.vim/bundle/vim-fahrenheit
 	url = https://github.com/fcpg/vim-fahrenheit
+[submodule "pack/plugins/start/vim-airline"]
+	path = pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
