@@ -35,7 +35,7 @@ set hlsearch
 " search entire project
 " nnoremap <C-w> :F expand("<cword>") **/*.c **/*.h<CR>
 " nnoremap <C-w> :F if **/*.c **/*.h<CR>
-nnoremap <C-w> :execute 'F ' . expand("<cword>") . ' **/*.h **/*.c'<CR>
+" nnoremap <C-w> :execute 'F ' . expand("<cword>") . ' **/*.h **/*.c'<CR>
 
 " file explorer
 packadd! nerdtree
