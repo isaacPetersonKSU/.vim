@@ -48,6 +48,7 @@ if has('termguicolors') " Important!!
 endif
 set background=dark
 colorscheme breakingbad
+
 " so u can watch tv behind it
 let s:transparent = 0
 command! TransparentToggle :call ToggleTransparent()
@@ -63,11 +64,6 @@ function! ToggleTransparent()
         " Restore your original background colors here
     endif
 endfunction
-
-
-" automatically make tags and tell me when you're doing it
-packad! vim-gutentags
-set statusline+=%{gutentags#statusline()}
 
 " include stdlibs
 set tags+=/opt/microchip/xc8/v2.40/pic/tags

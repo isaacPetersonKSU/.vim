@@ -1,31 +1,14 @@
-[submodule "nerdtree"]
-	path = "pack/plugins/start/nerdtree"
-	url = "https://github.com/preservim/nerdtree.git"
-[submodule "everforest"]
-	path = "pack/colors/start/everforest"
-	url = "https://github.com/sainnhe/everforest.git"
-[submodule "YouCompleteMe"]
-	path = pack/plugins/opt/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe.git
-[submodule "ctrlp"]
-	path = pack/plugins/opt/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "gutentags"]
-	path = pack/plugins/start/vim-gutentags
-	url = https://github.com/ludovicchabant/vim-gutentags.git
-[submodule "anyfold"]
-	path = pack/plugins/start/vim-anyfold
-	url = https://github.com/pseewald/vim-anyfold
-[submodule "far"]
-	path = pack/plugins/start/far.vim
-	url = https://github.com/brooth/far.vim
-[submodule "orbital"]
+# colors
+[submodule "pack/colors/start/everforest"]
+	path = pack/colors/start/everforest
+	url = https://github.com/sainnhe/everforest.git
+[submodule "pack/colors/start/vim-orbital"]
 	path = pack/colors/start/vim-orbital
 	url = https://github.com/fcpg/vim-orbital.git
-[submodule "amber"]
+[submodule "pack/colors/start/vim-amber"]
 	path = pack/colors/start/vim-amber
 	url = https://github.com/foxbunny/vim-amber.git
-[submodule "vorange"]
+[submodule "pack/colors/start/vorange"]
 	path = pack/colors/start/vorange
 	url = https://github.com/isaacPetersonKSU/vorange.git
 [submodule "pack/colors/start/vim-github-dark"]
@@ -34,8 +17,8 @@
 [submodule "pack/colors/start/gruvbox"]
 	path = pack/colors/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
-[submodule "pack/plugins/start/unimpaired"]
-	path = pack/plugins/start/unimpaired
+[submodule "pack/colors/start/unimpaired"]
+	path = pack/colors/start/unimpaired
 	url = https://tpope.io/vim/unimpaired.git
 [submodule "pack/colors/start/neverland-vim-theme"]
 	path = pack/colors/start/neverland-vim-theme
@@ -43,24 +26,30 @@
 [submodule "pack/colors/start/vim"]
 	path = pack/colors/start/vim
 	url = https://github.com/nordtheme/vim.git
-[submodule "pack/plugins/start/fugitive"]
-	path = pack/plugins/start/fugitive
+[submodule "pack/colors/start/fugitive"]
+	path = pack/colors/start/fugitive
 	url = https://tpope.io/vim/fugitive.git
-[submodule "pack/plugins/start/git-blame.vim"]
-	path = pack/plugins/start/git-blame.vim
-	url = https://github.com/zivyangll/git-blame.vim.git
 [submodule "pack/colors/start/momiji"]
 	path = pack/colors/start/momiji
 	url = https://github.com/kyoh86/momiji.git
-[submodule "/home/ijp/.vim/bundle/vim-fahrenheit"]
-	path = /home/ijp/.vim/bundle/vim-fahrenheit
-	url = https://github.com/fcpg/vim-fahrenheit
-[submodule "pack/plugins/start/vim-airline"]
-	path = pack/plugins/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule "pack/plugins/start/vim-fugitive"]
-	path = pack/plugins/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "pack/colors/start/vim-jimbothemes"]
 	path = pack/colors/start/vim-jimbothemes
 	url = https://github.com/i3d/vim-jimbothemes.git
+
+# utilites
+
+[submodule "pack/plugins/start/vim-fugitive"]
+	path = pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/plugins/start/vim-airline"]
+	path = pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/plugins/start/git-blame.vim"]
+	path = pack/plugins/start/git-blame.vim
+	url = https://github.com/zivyangll/git-blame.vim.git
+[submodule "pack/plugins/start/unimpaired"]
+	path = pack/plugins/start/unimpaired
+	url = https://tpope.io/vim/unimpaired.git
+[submodule "pack/plugins/start/nerdtree"]
+	path = pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
