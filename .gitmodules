@@ -17,15 +17,6 @@
 [submodule "pack/colors/start/unimpaired"]
 	path = pack/colors/start/unimpaired
 	url = https://tpope.io/vim/unimpaired.git
-[submodule "pack/colors/start/neverland-vim-theme"]
-	path = pack/colors/start/neverland-vim-theme
-	url = https://github.com/trapd00r/neverland-vim-theme.git
-[submodule "pack/colors/start/vim"]
-	path = pack/colors/start/vim
-	url = https://github.com/nordtheme/vim.git
-[submodule "pack/colors/start/fugitive"]
-	path = pack/colors/start/fugitive
-	url = https://tpope.io/vim/fugitive.git
 [submodule "pack/colors/start/momiji"]
 	path = pack/colors/start/momiji
 	url = https://github.com/kyoh86/momiji.git
