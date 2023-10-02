@@ -28,15 +28,6 @@ function! ToggleIndentStyle()
 endfunction
 command! ToggleIndent call ToggleIndentStyle()
 
-
-" highlight when searching locally
-set hlsearch
-
-" search entire project
-" nnoremap <C-w> :F expand("<cword>") **/*.c **/*.h<CR>
-" nnoremap <C-w> :F if **/*.c **/*.h<CR>
-" nnoremap <C-w> :execute 'F ' . expand("<cword>") . ' **/*.h **/*.c'<CR>
-
 " file explorer
 packadd! nerdtree
 " dont start nerdtree if opened on a file?
@@ -52,14 +43,11 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 " color scheme settings
-packadd! everforest
 if has('termguicolors') " Important!!
   set termguicolors
 endif
-let g:everforest_background = 'hard' " 'medium'(default), 'soft'
 set background=dark
-let g:everforest_better_performance = 1 " For better performance
-colorscheme everforest
+colorscheme breakingbad
 " so u can watch tv behind it
 let s:transparent = 0
 command! TransparentToggle :call ToggleTransparent()
