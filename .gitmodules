@@ -41,3 +41,6 @@
 [submodule "pack/plugins/start/nerdtree"]
 	path = pack/plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/plugins/start/far.vim"]
+	path = pack/plugins/start/far.vim
+	url = https://github.com/brooth/far.vim.git
