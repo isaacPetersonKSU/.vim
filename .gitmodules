@@ -14,9 +14,6 @@
 [submodule "pack/colors/start/vim-github-dark"]
 	path = pack/colors/start/vim-github-dark
 	url = https://github.com/vv9k/vim-github-dark.git
-[submodule "pack/colors/start/gruvbox"]
-	path = pack/colors/start/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
 [submodule "pack/colors/start/unimpaired"]
 	path = pack/colors/start/unimpaired
 	url = https://tpope.io/vim/unimpaired.git
