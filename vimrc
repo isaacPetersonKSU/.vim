@@ -8,10 +8,6 @@ set textwidth=80
 set colorcolumn=81
 set ruler
 
-" status bar alwasys show file path line number and percentage
-set laststatus=2
-set statusline=%f\ [%l:%c]->{%{expand('<cword>')}}\ 
-
 " tabs and indentation
 set tabstop=4 shiftwidth=4 softtabstop=4
 set autoindent smartindent
@@ -29,7 +25,6 @@ endfunction
 command! ToggleIndent call ToggleIndentStyle()
 
 " file explorer
-packadd! nerdtree
 " dont start nerdtree if opened on a file?
 if argc() == 0
   autocmd VimEnter * :NERDTreeVCS<CR>
@@ -46,8 +41,11 @@ nmap <silent> <c-l> :wincmd l<CR>
 if has('termguicolors') " Important!!
   set termguicolors
 endif
-set background=dark
+" set background=dark
 colorscheme breakingbad
+
+" for gitgutter
+set updatetime=100
 
 " so u can watch tv behind it
 let s:transparent = 0
