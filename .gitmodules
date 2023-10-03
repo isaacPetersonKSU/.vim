@@ -44,3 +44,6 @@
 [submodule "pack/plugins/start/far.vim"]
 	path = pack/plugins/start/far.vim
 	url = https://github.com/brooth/far.vim.git
+[submodule "pack/plugins/start/vim-gitgutter"]
+	path = pack/plugins/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
