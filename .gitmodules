@@ -56,3 +56,6 @@
 [submodule "pack/plugins/start/seoul256.vim"]
 	path = pack/plugins/start/seoul256.vim
 	url = https://github.com/junegunn/seoul256.vim.git
+[submodule "pack/plugins/start/oldbook-vim"]
+	path = pack/plugins/start/oldbook-vim
+	url = https://github.com/karoliskoncevicius/oldbook-vim.git
