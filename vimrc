@@ -42,7 +42,9 @@ if has('termguicolors') " Important!!
   set termguicolors
 endif
 " set background=dark
-colorscheme minimus
+colorscheme nord
+
+set hlsearch
 
 " for gitgutter
 set updatetime=100
