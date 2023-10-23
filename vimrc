@@ -79,3 +79,6 @@ set errorformat+=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
 " error format
 set errorformat+=***\ %trror\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m 
 " makefile error format
+
+set rtp+=/usr/bin/fzf
+
