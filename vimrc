@@ -66,7 +66,7 @@ function! ToggleTransparent()
 endfunction
 
 " include stdlibs
-set tags+=/opt/microchip/xc8/v2.40/pic/tags
+set tags+=/opt/microchip/xc8/v2.40/pic/include/tags
 
 " ccs's weird error format
 augroup MakeAutocommand
