@@ -1,3 +1,7 @@
+
+set exrc " local .vimrc files overrule this one 
+set secure " do not allow unsafe commands in local vimrc files
+
 " line numbers
 set number
 set relativenumber 
@@ -66,7 +70,7 @@ function! ToggleTransparent()
 endfunction
 
 " include stdlibs
-set tags+=/opt/microchip/xc8/v2.40/pic/include/tags
+set tags+=/opt/microchip/xc8/v2.41/pic/include/
 
 " ccs's weird error format
 augroup MakeAutocommand
