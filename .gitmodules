@@ -51,7 +51,7 @@
 	path = pack/plugins/start/unimpaired
 	url = https://tpope.io/vim/unimpaired.git
 [submodule "pack/plugins/start/nerdtree"]
-	path = pack/plugins/start/nerdtree
+	path = pack/plugins/opt/nerdtree
 	url = https://github.com/preservim/nerdtree.git
 [submodule "pack/plugins/start/far.vim"]
 	path = pack/plugins/start/far.vim
