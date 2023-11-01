@@ -28,13 +28,6 @@ function! ToggleIndentStyle()
 endfunction
 command! ToggleIndent call ToggleIndentStyle()
 
-" file explorer
-" dont start nerdtree if opened on a file?
-if argc() == 0
-  autocmd VimEnter * :NERDTreeVCS<CR>
-endif
-nnoremap tr :NERDTreeToggle<CR>
-
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
@@ -46,7 +39,7 @@ if has('termguicolors') " Important!!
   set termguicolors
 endif
 " set background=dark
-colorscheme nord
+colorscheme everforest
 
 set hlsearch
 
