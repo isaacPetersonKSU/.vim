@@ -2,14 +2,17 @@
 set exrc " local .vimrc files overrule this one 
 set secure " do not allow unsafe commands in local vimrc files
 
+set background=dark
+colorscheme gruvbox
+
 " line numbers
 set number
 set relativenumber 
 set laststatus=2
-
-" wrapping and line length
 set textwidth=80
 set colorcolumn=81
+set cursorline
+set hlsearch
 set ruler
 
 " tabs and indentation
@@ -34,14 +37,6 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-" color scheme settings
-if has('termguicolors') " Important!!
-  set termguicolors
-endif
-" set background=dark
-colorscheme everforest
-
-set hlsearch
 
 " for gitgutter
 set updatetime=100
@@ -59,7 +54,7 @@ function! ToggleTransparent()
         hi clear EndOfBuffer
         hi clear Normal
         " Restore your original background colors here
-    endif
+		endif
 endfunction
 
 " include stdlibs
@@ -70,12 +65,8 @@ augroup MakeAutocommand
   autocmd! 
   autocmd QuickFixCmdPost [^l]* cwindow | redraw!
 augroup END
-
-" warning format
 set errorformat+=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
-" error format
 set errorformat+=***\ %trror\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m 
-" makefile error format
 
 set rtp+=/usr/bin/fzf
 
