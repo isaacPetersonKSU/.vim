@@ -2,8 +2,8 @@
 set exrc " local .vimrc files overrule this one 
 set secure " do not allow unsafe commands in local vimrc files
 
-set background=dark
-colorscheme gruvbox
+set termguicolors
+colorscheme nord
 
 " line numbers
 set number
@@ -57,8 +57,6 @@ function! ToggleTransparent()
 		endif
 endfunction
 
-" include stdlibs
-set tags+=/opt/microchip/xc8/v2.41/pic/include/
 
 " ccs's weird error format
 augroup MakeAutocommand
