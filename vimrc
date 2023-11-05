@@ -2,8 +2,8 @@
 set exrc " local .vimrc files overrule this one 
 set secure " do not allow unsafe commands in local vimrc files
 
-set background=dark
-colorscheme gruvbox
+set termguicolors
+colorscheme nord
 
 " line numbers
 set number

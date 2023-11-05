@@ -65,3 +65,6 @@
 [submodule "pack/colors/start/gruvbox"]
 	path = pack/colors/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "pack/plugins/start/vimcolors"]
+	path = pack/plugins/start/vimcolors
+	url = https://github.com/hariton/vimcolors.git
