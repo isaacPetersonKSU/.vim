@@ -38,8 +38,9 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 " split when jumping to definitions 
-nnoremap <C-]>	:vsp <CR><C-w>w<C-]> <CR>
-nnoremap <S-C-]> :sp <CR><C-w>w<C-]> <CR>
+
+nnoremap <C-]> :vsp <CR><C-w>w<C-]> <CR>
+nnoremap <C-[> :sp <CR><C-w>w<C-]> <CR>
 
 
 " for gitgutter
