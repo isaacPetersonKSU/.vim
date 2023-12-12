@@ -37,6 +37,10 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" split when jumping to definitions 
+nnoremap <C-]>	:vsp <CR><C-w>w<C-]> <CR>
+nnoremap <S-C-]> :sp <CR><C-w>w<C-]> <CR>
+
 
 " for gitgutter
 set updatetime=100
@@ -59,12 +63,12 @@ endfunction
 
 
 " ccs's weird error format
-augroup MakeAutocommand
-  autocmd! 
-  autocmd QuickFixCmdPost [^l]* cwindow | redraw!
-augroup END
-set errorformat+=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
-set errorformat+=***\ %trror\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m 
+" augroup MakeAutocommand
+"   autocmd! 
+"   autocmd QuickFixCmdPost [^l]* cwindow | redraw!
+" augroup END
+" set errorformat+=>>>\ %tarning\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m
+" set errorformat+=***\ %trror\ %n\ \"%f\"\ Line\ %l(%c%.%#):\ %m 
 
 set rtp+=/usr/bin/fzf
 
